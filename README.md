@@ -86,8 +86,7 @@ precision    | 47.76%         |  49.08%  |   49.87%                   |  51.19% 
 
 
 
-3. Resnet+GRU
-____
+3. `Resnet+GRU`
 
 We propose this model also for Emotiw challenge. This resnet is not the original Resnet, but proposed initially for Face Recognition. So it has pretrained 
 model in face dataset. It first use in [center loss](https://github.com/ydwen/caffe-face/blob/caffe-face/face_example/face_train_test.prototxt), but we 
@@ -96,6 +95,8 @@ adjust it for facial expression recognition by adding BN, conv dropout, and shor
 To run this code, you also need [pretrained model best_resnet.model](https://drive.google.com/drive/folders/1f17xgwvGaUpgXYBssocUNXDBgga-b3qp?usp=sharing)
 Then change getTraintest_Emotiw.py as `VGG+GRU`. Lastly `python train.py`, you can begin to train.
 
+Performance:
+____
 Model          |Resnet+GRU(lr1e-4)| Resnet+GRU |  Resnet+GRU+conv drop |
 --------       | --------         | --------   |  --------             | 
 precision      | 46.97%           |  48.29%    |        50.13%         |
