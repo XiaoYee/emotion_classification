@@ -80,9 +80,9 @@ Performance:
 ____
 all the performance train and test on Emotiw2018 train and validation(just 379 video) partition. 
 
-| Model      |VGG+LSTM(lr1e-4)| VGG+LSTM |  VGG+LSTM cell(dropout 0.8)| VGG+GRU | 
-| --------   | -----:   | :----: |
-| 准确率      | 47.76%         |  49.08%  |   49.87%                   |  51.19% |
+Model        |VGG+LSTM(lr1e-4)| VGG+LSTM |  VGG+LSTM cell(dropout 0.8)| VGG+GRU | 
+--------     | --------       | -------- |  --------                  |-------- | 
+precision    | 47.76%         |  49.08%  |   49.87%                   |  51.19% |
 
 
 
@@ -96,8 +96,8 @@ adjust it for facial expression recognition by adding BN, conv dropout, and shor
 To run this code, you also need [pretrained model best_resnet.model](https://drive.google.com/drive/folders/1f17xgwvGaUpgXYBssocUNXDBgga-b3qp?usp=sharing)
 Then change getTraintest_Emotiw.py as `VGG+GRU`. Lastly `python train.py`, you can begin to train.
 
-| Model      |Resnet+GRU(lr1e-4)| Resnet+GRU |  Resnet+GRU+conv drop | 
-| --------   | -----:   | :----: |
-| 准确率      | 46.97%           |  48.29%    |        50.13%         |
+Model          |Resnet+GRU(lr1e-4)| Resnet+GRU |  Resnet+GRU+conv drop |
+--------       | --------         | --------   |  --------             | 
+precision      | 46.97%           |  48.29%    |        50.13%         |
 
 
